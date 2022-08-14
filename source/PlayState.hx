@@ -4914,7 +4914,7 @@ class PlayState extends MusicBeatState
         (curBeat);
         if (this.curBeat > 224 && this.curBeat < 256) {
             this.dad.velocity.y = -100;
-            this.camFollow.velocity.y = -100;
+            this.camFollowPos.velocity.y = -100;
         }
         if (this.curBeat > 256 && this.curBeat < 288) {
             this.dad.velocity.y = 0;
@@ -4931,7 +4931,7 @@ class PlayState extends MusicBeatState
         if (this.curBeat > 352) {
             this.dad.velocity.y = 0;
             this.boyfriend.velocity.y = 0;
-            this.camFollow.velocity.y = 0;
+            this.camFollowPos.velocity.y = 0;
         }
 }
 
